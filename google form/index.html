@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arkedia - Employee Survey</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="WhatsApp Image 2025-08-03 at 9.25.37 PM.jpeg" alt="Arkedia Logo" class="logo" />
+    <h1>Employee Survey</h1>
+    <form action="https://formsubmit.co/sohailaa043@gmail.com" method="POST">
+      <input
+        type="hidden"
+        name="_next"
+        value="http://127.0.0.1:5500/thankyou.html"
+      />
+      <input type="hidden" name="_captcha" value="false">
+
+
+      <label>What’s your name?</label>
+      <input type="text" name="full_name" required />
+
+      <label>How long have you been with the company?</label>
+      <select name="duration" required>
+        <option>Less than 1 month</option>
+        <option>1–3 months</option>
+        <option>3–6 months</option>
+        <option>More than 6 months</option>
+      </select>
+
+      <label>Which department are you in?</label>
+      <select name="department" required>
+       
+        <option>Marketing Team</option>
+        <option>Social Media Specialist</option>
+        <option>.NET Developer</option>
+        <option>Angular Developer</option>
+        <option>Flutter Developer</option>
+        <option>HR</option>
+      </select>
+
+      <label
+        >Overall, how satisfied are you with your work environment? (1-5)</label
+      >
+      <input type="number" name="satisfaction" min="1" max="5" required />
+
+      <label>What would help you do your job more effectively?</label>
+      <textarea name="improvement_suggestion"></textarea>
+
+      <label>What can be improved?</label>
+      <textarea name="improve"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
